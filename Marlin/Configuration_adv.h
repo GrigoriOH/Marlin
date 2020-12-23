@@ -1651,7 +1651,7 @@
     #endif
   #endif
 
-  #define BABYSTEP_DISPLAY_TOTAL          // Display total babysteps since last G28
+  //#define BABYSTEP_DISPLAY_TOTAL          // Display total babysteps since last G28
 
   #ifndef XY3_V5_310_NO_TITAN_NO_TMC_NO_ABL
     #define BABYSTEP_ZPROBE_OFFSET          // Combine M851 Z and Babystepping
