@@ -1360,7 +1360,7 @@
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_INVERTING true // Set to true to invert the logic of the sensor.
+  #define FIL_RUNOUT_STATE     HIGH
   //#define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN      // Use internal pulldown for filament runout pins.
 
@@ -2424,7 +2424,7 @@
 // 480x320, 3.5", SPI Display From MKS
 // Normally used in MKS Robin Nano V2
 //
-#define FSMC_GRAPHICAL_TFT
+//#define FSMC_GRAPHICAL_TFT
 //TFT SETUP DONE BY CHITU BOARD
 
 //
@@ -2465,7 +2465,7 @@
 //
 // 480x320, 3.5", FSMC Stock Display from TronxXY
 //
-//#define TFT_TRONXY_X5SA
+#define TFT_TRONXY_X5SA
 
 //
 // 480x320, 3.5", FSMC Stock Display from AnyCubic
@@ -2507,7 +2507,7 @@
  */
 //#define TFT_CLASSIC_UI
 //#define TFT_COLOR_UI
-//#define TFT_LVGL_UI
+#define TFT_LVGL_UI
 
 /**
  * TFT Rotation. Set to one of the following values:
@@ -2531,7 +2531,7 @@
 //
 // ADS7843/XPT2046 ADC Touchscreen such as ILI9341 2.8
 //
-#define TOUCH_BUTTONS
+//#define TOUCH_BUTTONS
 //DONE BY CHITU BOARD
 //#if ENABLED(TOUCH_BUTTONS)
 //  #define BUTTON_DELAY_EDIT  50 // (ms) Button repeat delay for edit screens
@@ -2552,7 +2552,7 @@
 #define TFT_BTCANCEL_COLOR COLOR_RED    // cancel button
 #define TFT_BTARROWS_COLOR COLOR_WHITE  // arrows up/down
 #define TFT_BTOKMENU_COLOR COLOR_GREEN  // enter button
-//#define TOUCH_SCREEN
+#define TOUCH_SCREEN
 #if ENABLED(TOUCH_SCREEN)
   #define BUTTON_DELAY_EDIT  50 // (ms) Button repeat delay for edit screens
   #define BUTTON_DELAY_MENU 250 // (ms) Button repeat delay for menus
